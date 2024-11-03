@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f4f8;
+    background-color: #e0f7fa;
     margin: 0;
 }
 
@@ -27,11 +27,13 @@ body {
     border-radius: 50%;
     cursor: pointer;
     position: relative;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .stage:hover {
-    background-color: #357abd;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
