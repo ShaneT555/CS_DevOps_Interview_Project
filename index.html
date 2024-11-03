@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment Pipeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pipeline-container">
+        <div class="stage" id="build" onclick="showInfo('build')">
+            <div class="icon">🔨</div>
+            <p>Build</p>
+        </div>
+        <div class="arrow">➡️</div>
+        <div class="stage" id="test" onclick="showInfo('test')">
+            <div class="icon">✅</div>
+            <p>Test</p>
+        </div>
+        <div class="arrow">➡️</div>
+        <div class="stage" id="deploy" onclick="showInfo('deploy')">
+            <div class="icon">🚀</div>
+            <p>Deploy</p>
+        </div>
+        <div class="arrow">➡️</div>
+        <div class="stage" id="review" onclick="showInfo('review')">
+            <div class="icon">🔍</div>
+            <p>Review</p>
+        </div>
+    </div>
+
+    <!-- Pop-up text box for more information -->
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">✖️</span>
+        <div id="popup-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
